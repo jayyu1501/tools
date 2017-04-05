@@ -124,7 +124,7 @@ redep()
 
 getlog()
 {
-    LOG_SYNC_SERVER='jinyux@central-archive'
+    LOG_SYNC_SERVER='user@central-archive'
     LOG_FILE_PATH='/u01/archive_sync/yyyy/'
     #cmd="${LOG_SYNC_SERVER}:${LOG_FILE_PATH}/$1"
     #echo $cmd
@@ -133,7 +133,7 @@ getlog()
 
 findlog()
 {
-    LOG_SYNC_SERVER='jinyux@central-archive'
+    LOG_SYNC_SERVER='user@central-archive'
     cmd="find /u01/archive_sync/yyyy/$1 -maxdepth 1 -type f -printf %f\\\\n"
     echo $cmd
     ssh ${LOG_SYNC_SERVER} ${cmd}
