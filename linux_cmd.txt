@@ -1,0 +1,10 @@
+* get hyperthread flag
+
+grep '^flags\b' /proc/cpuinfo | tail -1
+or if you want to include the "ht" in the pattern
+
+* how to know the thread name that is busy 
+ps -T -p $PID
+and then togethe with htop
+
+
